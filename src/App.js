@@ -1,10 +1,27 @@
 import React, {Component} from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
+
+import Home from './Home';
+import Page1 from './Page1';
+import Page2 from './Page2';
 
 class App extends Component{
 	render(){
 		return(
 			<div>
-				<span>Hello World</span>
+				<h1>Laravel Mix Example</h1>
+				<ul>
+					<li><Link to="/">Home</Link></li>
+					<li><Link to="/page1">Page 1</Link></li>
+					<li><Link to="/page2">Page 2</Link></li>
+				</ul>
+				<div>
+		        <Switch>
+		            <Route exact path='/' component={Home}/>
+		            <Route exact path='/page1' component={Page1}/>
+		            <Route exact path='/page2' component={Page2}/>
+		        </Switch>
+		        </div>
 			</div>);
 	}
 }
