@@ -12,13 +12,13 @@ let mix = require('laravel-mix');
  */
 
 mix.setPublicPath('dist');
-mix.react('src/index.js', 'dist/');
+mix.react('src/index.js', 'dist/').version();
 
 
 mix.styles([
     'node_modules/normalize.css/normalize.css',
     'src/css/app.css'
-], 'dist/css/all.css');
+], 'dist/css/all.css').version();
 
 // Full API
 // mix.js(src, output);
