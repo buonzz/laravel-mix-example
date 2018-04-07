@@ -1,4 +1,4 @@
 node_modules/
 dist/*.js
 dist/*.css
-dist/*.json
+dist/mix-manifest.json
