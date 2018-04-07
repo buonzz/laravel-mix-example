@@ -1,0 +1,23 @@
+{
+  "name": "laravel-mix-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buonzz/laravel-mix-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buonzz/laravel-mix-example/issues"
+  },
+  "homepage": "https://github.com/buonzz/laravel-mix-example#readme",
+  "devDependencies": {
+    "laravel-mix": "^2.1.11"
+  }
+}
