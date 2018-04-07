@@ -14,6 +14,12 @@ let mix = require('laravel-mix');
 mix.setPublicPath('dist');
 mix.react('src/index.js', 'dist/');
 
+
+mix.styles([
+    'node_modules/normalize.css/normalize.css',
+    'src/css/app.css'
+], 'dist/css/all.css');
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
