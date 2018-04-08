@@ -8,19 +8,21 @@ import Page404 from './Page404';
 
 class App extends Component{
 	render(){
+
+		const params = window.location.search;
 		return(
 			<div>
 				<h1>Laravel Mix Example</h1>
 				<ul>
-					<li><NavLink exact to="/">Home</NavLink></li>
-					<li><NavLink to="/page1">Page 1</NavLink></li>
-					<li><NavLink to="/page2">Page 2</NavLink></li>
+					<li><NavLink exact to={"/"+params} >Home</NavLink></li>
+					<li><NavLink to={"/page1/"+params} >Page 1</NavLink></li>
+					<li><NavLink to={"/page2/"+params} >Page 2</NavLink></li>
 				</ul>
 				<div>
 		        <Switch>
 		            <Route exact path='/' component={Home}/>
-		            <Route exact path='/page1' component={Page1}/>
-		            <Route exact path='/page2' component={Page2}/>
+		            <Route exact path='/page1/' component={Page1}/>
+		            <Route exact path='/page2/' component={Page2}/>
 		            <Route component={Page404} />
 		        </Switch>
 		        </div>
