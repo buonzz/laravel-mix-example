@@ -12,7 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.setPublicPath('dist')
-   .react('src/index.js', 'dist/')
+   .react('src/index.js', 'dist/app.js')
    .styles([
     'node_modules/normalize.css/normalize.css',
     'src/css/app.css'
