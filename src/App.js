@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, NavLink } from 'react-router-dom';
 
 import Home from './Home';
 import Page1 from './Page1';
@@ -11,9 +11,9 @@ class App extends Component{
 			<div>
 				<h1>Laravel Mix Example</h1>
 				<ul>
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/page1">Page 1</Link></li>
-					<li><Link to="/page2">Page 2</Link></li>
+					<li><NavLink to="/">Home</NavLink></li>
+					<li><NavLink to="/page1">Page 1</NavLink></li>
+					<li><NavLink to="/page2">Page 2</NavLink></li>
 				</ul>
 				<div>
 		        <Switch>
