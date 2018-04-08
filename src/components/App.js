@@ -14,9 +14,9 @@ class App extends Component{
 			<div>
 				<h1>Laravel Mix Example</h1>
 				<ul>
-					<li><NavLink exact to={"/"+params} >Home</NavLink></li>
-					<li><NavLink to={"/page1/"+params} >Page 1</NavLink></li>
-					<li><NavLink to={"/page2/"+params} >Page 2</NavLink></li>
+					<li><NavLink exact to={"/"+params} isActive={(match, location) => location.pathname + location.search === '/'+params}>Home</NavLink></li>
+					<li><NavLink to={"/page1/"+params} isActive={(match, location) => location.pathname + location.search === '/page1/'+params}>Page 1</NavLink></li>
+					<li><NavLink to={"/page2/"+params} isActive={(match, location) => location.pathname + location.search === '/page2/'+params}>Page 2</NavLink></li>
 				</ul>
 				<div>
 		        <Switch>
