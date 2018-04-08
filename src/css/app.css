@@ -1,7 +1,7 @@
 /* app css */
 
-*{font-family: 'Slabo 27px', serif;}
+h1,a,h3 {font-family: 'Slabo 27px', serif;}
 
-a:active{
-	color:#f3f3f3;
+a.active{
+	color:#000;
 }
