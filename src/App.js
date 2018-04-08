@@ -11,7 +11,7 @@ class App extends Component{
 			<div>
 				<h1>Laravel Mix Example</h1>
 				<ul>
-					<li><NavLink to="/">Home</NavLink></li>
+					<li><NavLink exact to="/">Home</NavLink></li>
 					<li><NavLink to="/page1">Page 1</NavLink></li>
 					<li><NavLink to="/page2">Page 2</NavLink></li>
 				</ul>
