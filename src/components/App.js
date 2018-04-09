@@ -6,11 +6,8 @@ import Page1 from './Page1';
 import Page2 from './Page2';
 import Page404 from './Page404';
 
-import {Users} from './DataSet';
-
 class App extends Component{
 	render(){
-		console.log(Users);
 		const params = window.location.search;
 		return(
 			<div>
