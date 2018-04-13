@@ -25,10 +25,6 @@ class App extends Component{
           <a href="#features" className="mdl-layout__tab">Details</a>
           <a href="#features" className="mdl-layout__tab">Technology</a>
           <a href="#features" className="mdl-layout__tab">FAQ</a>
-          <button className="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i className="material-icons" role="presentation">add</i>
-            <span className="visuallyhidden">Add</span>
-          </button>
         </div>
       </header>
       <main className="mdl-layout__content">

@@ -13,7 +13,6 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('dist')
    .react('src/index.js', 'dist/app.js')
-   .js('node_modules/material-design-lite/material.min.js', 'dist/app.js')
    .styles([
    	'node_modules/material-design-lite/material.min.css',
     'src/css/app.css'
