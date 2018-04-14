@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Switch, Route, NavLink } from 'react-router-dom';
 
+import { Button } from 'semantic-ui-react';
+
 import Home from './Home';
 import Page1 from './Page1';
 import Page2 from './Page2';
@@ -17,6 +19,7 @@ class App extends Component{
 					<li><NavLink to={"/page1/"+params} isActive={(match, location) => location.pathname + location.search === '/page1/'+params}>Page 1</NavLink></li>
 					<li><NavLink to={"/page2/"+params} isActive={(match, location) => location.pathname + location.search === '/page2/'+params}>Page 2</NavLink></li>
 				</ul>
+				 <Button>Click Here</Button>
 				<div>
 		        <Switch>
 		            <Route exact path='/' component={Home}/>
