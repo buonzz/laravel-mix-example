@@ -11,7 +11,7 @@ class App extends Component{
 
 	constructor(props){
 		super(props);
-		this.state = { activeItem: 'bio' }; 
+		this.state = { activeItem: 'home' }; 
 		this.handleItemClick = this.handleItemClick.bind(this);
 	}
 
@@ -27,10 +27,10 @@ class App extends Component{
 			  <Grid>
 			    <Grid.Column width={4}>
 			      <Menu fluid vertical tabular>
-			        <Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick} as={Link} to='/'/>
-			        <Menu.Item name='pics' active={activeItem === 'pics'} onClick={this.handleItemClick} as={Link} to='/page1/'/>
-			        <Menu.Item name='companies' active={activeItem === 'companies'} onClick={this.handleItemClick} as={Link} to='/page2/'/>
-			        <Menu.Item name='links' active={activeItem === 'links'} onClick={this.handleItemClick} as={Link} to='/page3/'/>
+			        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} as={Link} to={"/"+params}/>
+			        <Menu.Item name='page1' active={activeItem === 'page1'} onClick={this.handleItemClick} as={Link} to={"/page1/"+params}/>
+			        <Menu.Item name='page2' active={activeItem === 'page2'} onClick={this.handleItemClick} as={Link} to={"/page2/"+params}/>
+			        <Menu.Item name='page3' active={activeItem === 'page3'} onClick={this.handleItemClick} as={Link} to={"/page3/"+params}/>
 			      </Menu>
 			    </Grid.Column>
 
