@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import { Grid, Menu, Segment } from 'semantic-ui-react';
+import { Grid, Menu, Segment,  Header, Icon } from 'semantic-ui-react';
 
 import Home from './Home';
 import Page1 from './Page1';
@@ -24,6 +24,13 @@ class App extends Component{
 		const { activeItem } = this.state;
 
 		return(
+			<div className="wrapper">
+			  <Header as='h2'>
+			    <Icon name='plug' />
+			    <Header.Content>
+			      Laravel Mix Example
+			    </Header.Content>
+			  </Header>
 			  <Grid>
 			    <Grid.Column width={4}>
 			      <Menu fluid vertical tabular>
@@ -45,6 +52,7 @@ class App extends Component{
 			      </Segment>
 			    </Grid.Column>
 			  </Grid>
+			 </div>
 		);
 	}
 }
