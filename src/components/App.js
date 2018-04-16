@@ -1,15 +1,23 @@
 import React, {Component} from 'react';
 import { Switch, Route, NavLink } from 'react-router-dom';
 
+
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from '../reducers';
+
 import Home from './Home';
 import Page1 from './Page1';
 import Page2 from './Page2';
 import Page404 from './Page404';
 
+const store = createStore(reducers);
+
 class App extends Component{
 	render(){
 		const params = window.location.search;
 		return(
+			<Provider store={store}>
 			<div>
 				<h1>Laravel Mix Example</h1>
 				<ul>
@@ -25,7 +33,8 @@ class App extends Component{
 		            <Route component={Page404} />
 		        </Switch>
 		        </div>
-			</div>);
+		       </div>
+			</Provider>);
 	}
 }
 
