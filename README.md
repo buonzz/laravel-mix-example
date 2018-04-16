@@ -9,7 +9,7 @@ see https://github.com/JeffreyWay/laravel-mix/blob/master/docs/installation.md
 
 * Simple ReactJS app, with multiple components
 * Demo of simple navigation, using react-router (3 static pages as component)
-* combine normalize css + app specific CSS
+* Using Semantic UI for styling (https://react.semantic-ui.com)
 
 
 ## Requirements
@@ -72,10 +72,4 @@ server {
         }
 
 }
-```
-
-while on local development, you can pass parameter to local-web-server
-
-```
-ws --spa index.html -d dist
 ```
